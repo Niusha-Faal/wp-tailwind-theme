@@ -40,4 +40,3 @@ function toFarsiNumerals($str)
     // Replace each Arabic numeral with its Persian equivalent
     return strtr($str, $numMap);
 }
-

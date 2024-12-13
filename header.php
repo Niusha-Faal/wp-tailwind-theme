@@ -13,17 +13,14 @@
 <body <?php body_class() ?> >
     <?php wp_body_open(); ?>
 
-    <header class="px-4">
+    <header class="w-full px-4 pt-2">
         <div class="flex max-w-screen-xl mx-auto h-[70px]">
-            <div class="flex-none  pl-1">
+            <div class="pl-3">
                     <?php the_custom_logo() ?>
             </div>
-            <div class="flex-1 pt-1">
-                <div id="menu-items" class="pt-5 hidden md:block text-center">
+                <div id="menu-items" class="grow pt-5">
                     <?= wp_nav_menu(array('theme_location' => 'header-menu')); ?>
                 </div>
-            </div>
-
         </div>
     </header>
 
